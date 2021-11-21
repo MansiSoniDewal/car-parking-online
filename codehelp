@@ -1,0 +1,60 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int u_input;
+    int amount,count;
+//menu
+
+cout<<"press1 for rickshaw\n";
+cout<<"press2 for car\n";
+cout<<"press3 for bus\n";
+cout<<"press4 to show record\n";
+cout<<"press5 to delete the record\n";
+
+cin>>u_input;
+
+if(u_input==1)
+{
+    if(count<=50){
+    amount=amount+100;
+    count=count+1;
+    }
+    else
+    cout<<"no more cars, parking is full"<<endl;
+}
+else if(u_input==2)
+{
+    if(count<=50){
+    amount=amount+200;
+    count=count+1;
+    }
+    else
+    cout<<"no more cars,parking is full"<<endl;
+}
+else if(u_input==3)
+{
+    if(count<=50){
+    amount=amount+300;
+    count=count+1;
+    }
+    else
+    cout<<"no more cars,parking is full"<<endl;
+    
+}
+else if(u_input==4)
+{
+    cout<<"the total amount is: "<<amount<<endl;
+    cout<<"the total no. of vehciles parked : "<<count<<endl;
+}
+else if(u_input==5)
+{
+    amount=0;
+    count=0;
+}
+else{
+    cout<<"invalid number"<<endl;
+}
+
+    return 0;
+}
